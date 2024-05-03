@@ -2,6 +2,6 @@
 
 # Slack Notification Variables
 channel: "test"                          # Name of Slack Channel
-hostname: "cypik"                         # Hostname
+hostname: "ubuntu"                         # Hostname
 webhook_url: "https://hooks.slack.com/services/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"                      # url of Slack Webhook
 dir_path: "/opt/slack-ssh-notifier"

@@ -13,35 +13,14 @@
 
 <p align="center">
 
-<a href="https://www.ansible.com">
-  <img src="https://img.shields.io/badge/Ansible-2.8-green?style=flat&logo=ansible" alt="Ansible">
-</a>
-<a href="LICENSE.md">
-  <img src="https://img.shields.io/badge/License-MIT-blue.svg" alt="Licence">
-</a>
-<a href="https://ubuntu.com/">
-  <img src="https://img.shields.io/badge/ubuntu-16.x-orange?style=flat&logo=ubuntu" alt="Distribution">
-</a>
-<a href="https://ubuntu.com/">
-  <img src="https://img.shields.io/badge/ubuntu-18.x-orange?style=flat&logo=ubuntu" alt="Distribution">
-</a>
-<a href="https://www.centos.org/">
-  <img src="https://img.shields.io/badge/centos-7.x-orange" alt="Distribution">
-</a>
+
+
+
 
 
 </p>
 <p align="center">
 
-<a href='https://facebook.com/sharer/sharer.php?u=https://github.com/cypik/ansible-role-slack-ssh-notifier'>
-  <img title="Share on Facebook" src="https://user-images.githubusercontent.com/50652676/62817743-4f64cb80-bb59-11e9-90c7-b057252ded50.png" />
-</a>
-<a href='https://www.linkedin.com/shareArticle?mini=true&title=Ansible+Role+Slack+SSH+Notifier&url=https://github.com/cypik/ansible-role-slack-ssh-notifier'>
-  <img title="Share on LinkedIn" src="https://user-images.githubusercontent.com/50652676/62817742-4e339e80-bb59-11e9-87b9-a1f68cae1049.png" />
-</a>
-<a href='https://twitter.com/intent/tweet/?text=Ansible+Role+Slack+SSH+Notifier&url=https://github.com/cypik/ansible-role-slack-ssh-notifier'>
-  <img title="Share on Twitter" src="https://user-images.githubusercontent.com/50652676/62817740-4c69db00-bb59-11e9-8a79-3580fbbf6d5c.png" />
-</a>
 
 </p>
 <hr>
@@ -83,8 +62,8 @@ Followiing things includes in this role:
 
 
 ```yaml
-- hosts: localhost
-  remote_user: root
+- hosts: ubuntu
+  remote_user: suresh
   become: true
   roles:
     - cypik.ansible_role_slack_ssh_notifier
@@ -95,7 +74,7 @@ Followiing things includes in this role:
 
 ```yaml
   channel: "testing"
-  webhook_url: "https://hooks.slack.com/services/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"
+  webhook_url: "https://hooks.slack.com/services/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"
   dir_path: "/opt/slack-ssh-notifier"
 ```
 
@@ -106,27 +85,7 @@ Followiing things includes in this role:
   $ ansible-galaxy install cypik.ansible_role_slack_ssh_notifier
 ```
 
-
-
-
-
-
-## Feedback 
-If you come accross a bug or have any feedback, please log it in our [issue tracker](https://github.com/cypik/ansible-role-slack-ssh-notifier/issues), or feel free to drop us an email at [hello@cypik.com](mailto:hello@cypik.com).
-
-If you have found it worth your time, go ahead and give us a ★ on [our GitHub](https://github.com/cypik/ansible-role-slack-ssh-notifier)!
-
 ## About us
 
 At [cypik][website], we offer expert guidance, implementation support and services to help organisations accelerate their journey to the cloud. Our services include docker and container orchestration, cloud migration and adoption, infrastructure automation, application modernisation and remediation, and performance engineering.
 
-<p align="center">We are <b> The Cloud Experts!</b></p>
-<hr />
-<p align="center">We ❤️  <a href="https://github.com/cypik">Open Source</a> and you can check out <a href="https://github.com/cypik">our other modules</a> to get help with your new Cloud ideas.</p>
-
-  [website]: https://cypik.com
-  [github]: https://github.com/cypik
-  [linkedin]: https://cpco.io/linkedin
-  [twitter]: https://twitter.com/cypik/
-  [email]: https://cypik.com/contact-us.html
-  [terraform_modules]: https://github.com/cypik?utf8=%E2%9C%93&q=terraform-&type=&language=
